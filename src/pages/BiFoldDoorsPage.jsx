@@ -34,7 +34,7 @@ function BiFoldDoorsPage() {
         <div className="container service-hero-grid">
           <div className="service-hero-content">
             <p className="eyebrow">Flagship Service</p>
-            <h1 className="display-heading">Bi-Fold / Accordion Door Systems</h1>
+            <h1 className="display-heading">Bi-Fold Door Systems</h1>
             <p className="lede">
               Premium folding door systems for wide indoor-outdoor openings, patios, kitchens,
               living rooms, decks, pool areas, and entertainment spaces.
