@@ -30,15 +30,6 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="positioning-strip" aria-label="Pinto Developments service focus">
-        <div className="container positioning-strip-inner">
-          <span>Sales Support</span>
-          <span>Opening Prep</span>
-          <span>Installation</span>
-          <span>Chicago &amp; Chicagoland</span>
-        </div>
-      </section>
-
       <section className="page-section">
         <div className="container featured-service">
           <div className="featured-service-image image-placeholder" aria-hidden="true">
@@ -66,7 +57,6 @@ function HomePage() {
       <ServicePreviewGrid />
       <PortfolioPreview />
       <ProcessPreview />
-
       <CTASection />
     </>
   );
