@@ -3,10 +3,15 @@ import CTASection from "../components/sections/CTASection.jsx";
 import ServicePreviewGrid from "../components/sections/ServicePreviewGrid.jsx";
 import PortfolioPreview from "../components/sections/PortfolioPreview.jsx";
 import ProcessPreview from "../components/sections/ProcessPreview.jsx";
+import PageMeta from "../components/ui/PageMeta.jsx";
 
 function HomePage() {
   return (
     <>
+      <PageMeta
+        title="Pinto Developments | Specialty Door Systems in Chicago"
+        description="Pinto Developments provides specialty door system support, opening preparation coordination, and installation for premium residential and boutique commercial projects in Chicago and Chicagoland."
+      />
       <section className="home-hero">
         <div className="home-hero-image" aria-hidden="true"></div>
 

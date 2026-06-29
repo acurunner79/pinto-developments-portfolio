@@ -3,6 +3,7 @@ import CTASection from "../components/sections/CTASection.jsx";
 import ProcessStep from "../components/cards/ProcessStep.jsx";
 import SectionHeader from "../components/ui/SectionHeader.jsx";
 import { processSteps } from "../data/processSteps.js";
+import PageMeta from "../components/ui/PageMeta.jsx";
 
 const clientPrepItems = [
   "Project location",
@@ -33,6 +34,10 @@ const coordinationItems = [
 function ProcessPage() {
   return (
     <>
+      <PageMeta
+        title="Process | Pinto Developments"
+        description="Learn the Pinto Developments process for specialty door systems, from system selection and opening review to installation and final function checks."
+      />
       <section className="service-hero">
         <div className="container service-hero-grid">
           <div className="service-hero-content">

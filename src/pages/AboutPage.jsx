@@ -1,6 +1,7 @@
 import Button from "../components/ui/Button.jsx";
 import CTASection from "../components/sections/CTASection.jsx";
 import SectionHeader from "../components/ui/SectionHeader.jsx";
+import PageMeta from "../components/ui/PageMeta.jsx";
 
 const specialtyItems = [
   {
@@ -33,6 +34,10 @@ const trustItems = [
 function AboutPage() {
   return (
     <>
+      <PageMeta
+        title="About Pinto Developments"
+        description="Pinto Developments is led by Joshua Pinto and focuses on premium specialty door systems for high-end residential and boutique commercial projects."
+      />
       <section className="service-hero">
         <div className="container service-hero-grid">
           <div className="service-hero-content">
@@ -79,7 +84,7 @@ function AboutPage() {
                 specialty installation.
               </p>
               <p>
-                The goal is not to operate like a general handyman service. Pinto Developments is
+                Pinto Developments is
                 positioned as a specialty door systems partner for homeowners, designers,
                 architects, builders, and general contractors working on high-end projects.
               </p>

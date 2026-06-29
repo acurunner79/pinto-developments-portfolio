@@ -3,6 +3,7 @@ import CTASection from "../components/sections/CTASection.jsx";
 import ProcessStep from "../components/cards/ProcessStep.jsx";
 import SectionHeader from "../components/ui/SectionHeader.jsx";
 import { biFoldBenefits, biFoldPlanningItems, biFoldUses } from "../data/biFoldPage.js";
+import PageMeta from "../components/ui/PageMeta.jsx";
 
 const miniProcess = [
   {
@@ -30,6 +31,10 @@ const miniProcess = [
 function BiFoldDoorsPage() {
   return (
     <>
+      <PageMeta
+        title="Bi-fold Door Systems in Chicago | Pinto Developments"
+        description="Premium bi-fold door system guidance, opening review, coordination, and installation support for high-end residential projects in Chicago and Chicagoland."
+      />
       <section className="service-hero">
         <div className="container service-hero-grid">
           <div className="service-hero-content">

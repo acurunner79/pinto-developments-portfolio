@@ -5,6 +5,7 @@ import ImageLightbox from "../components/ui/ImageLightbox.jsx";
 import ResponsiveImage from "../components/ui/ResponsiveImage.jsx";
 import SectionHeader from "../components/ui/SectionHeader.jsx";
 import { portfolioGroups } from "../data/portfolio.js";
+import PageMeta from "../components/ui/PageMeta.jsx";
 
 function PortfolioPage() {
   const [activeImage, setActiveImage] = useState(null);
@@ -12,6 +13,10 @@ function PortfolioPage() {
 
   return (
     <>
+      <PageMeta
+        title="Portfolio | Pinto Developments Specialty Door Systems"
+        description="Selected specialty door system work including solid steel systems, multi-slide glass systems, opening preparation, and large framed door systems."
+      />
       <section className="service-hero">
         <div className="container service-hero-grid">
           <div className="service-hero-content">

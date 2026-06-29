@@ -2,12 +2,17 @@ import Button from "../components/ui/Button.jsx";
 import CTASection from "../components/sections/CTASection.jsx";
 import SectionHeader from "../components/ui/SectionHeader.jsx";
 import { services } from "../data/services.js";
+import PageMeta from "../components/ui/PageMeta.jsx";
 
 const serviceDetails = services.filter((service) => !service.featured);
 
 function ServicesPage() {
   return (
     <>
+      <PageMeta
+        title="Specialty Door System Services | Pinto Developments"
+        description="Explore multi-slide, pocketing, pivot, solid steel, aluminum, and hidden Murphy Door systems supported by Pinto Developments in Chicago and Chicagoland."
+      />
       <section className="service-hero">
         <div className="container service-hero-grid">
           <div className="service-hero-content">

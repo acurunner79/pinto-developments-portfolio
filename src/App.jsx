@@ -8,6 +8,7 @@ import ProcessPage from "./pages/ProcessPage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
+import ThankYouPage from "./pages/ThankYouPage.jsx";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/process" element={<ProcessPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/thank-you" element={<ThankYouPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </PageShell>

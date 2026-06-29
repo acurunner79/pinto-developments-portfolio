@@ -1,5 +1,6 @@
 import Button from "../components/ui/Button.jsx";
 import { siteInfo } from "../data/siteInfo.js";
+import PageMeta from "../components/ui/PageMeta.jsx";
 
 const doorTypes = [
   "Bi-fold door systems",
@@ -24,6 +25,10 @@ const whatToSend = [
 function ContactPage() {
   return (
     <>
+      <PageMeta
+        title="Contact Pinto Developments"
+        description="Contact Pinto Developments to start a specialty door system project in Chicago or Chicagoland."
+      />
       <section className="service-hero contact-hero">
         <div className="container service-hero-grid">
           <div className="service-hero-content">
@@ -92,7 +97,15 @@ function ContactPage() {
             <p className="eyebrow">Project Inquiry</p>
             <h2>Tell us about the opening</h2>
 
-            <form className="contact-form" name="project-inquiry">
+            <form
+              className="contact-form"
+              name="project-inquiry"
+              method="POST"
+              data-netlify="true"
+              encType="multipart/form-data"
+              action="/thank-you"
+            >
+              <input type="hidden" name="form-name" value="project-inquiry" />
               <div className="form-grid">
                 <div className="form-field">
                   <label htmlFor="name">Name</label>
