@@ -9,5 +9,27 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <form
+      name="project-inquiry"
+      method="POST"
+      data-netlify="true"
+      enctype="multipart/form-data"
+      hidden
+    >
+      <input type="hidden" name="form-name" value="project-inquiry" />
+
+      <input type="text" name="name" />
+      <input type="tel" name="phone" />
+      <input type="email" name="email" />
+      <input type="text" name="location" />
+      <select name="doorType"></select>
+      <input type="text" name="openingSize" />
+      <select name="projectType"></select>
+      <select name="teamStatus"></select>
+      <input type="text" name="timeline" />
+      <input type="text" name="budget" />
+      <input type="file" name="photos" />
+      <textarea name="message"></textarea>
+    </form>
   </body>
 </html>
