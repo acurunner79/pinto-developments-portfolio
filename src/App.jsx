@@ -9,10 +9,12 @@ import AboutPage from "./pages/AboutPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
 import ThankYouPage from "./pages/ThankYouPage.jsx";
+import ScrollToTop from "./components/ui/ScrollToTop.jsx";
 
 function App() {
   return (
     <PageShell>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/bi-fold-doors" element={<BiFoldDoorsPage />} />
