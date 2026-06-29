@@ -38,12 +38,12 @@ function HomePage() {
       <section className="page-section">
         <div className="container featured-service">
           <div className="featured-service-image image-placeholder" aria-hidden="true">
-            <span>Bi-Fold / Accordion Doors</span>
+            <span>Bi-Fold Doors</span>
           </div>
 
           <div className="featured-service-content">
             <p className="eyebrow">Featured Service</p>
-            <h2>Bi-Fold / Accordion Door Systems</h2>
+            <h2>Bi-Fold Door Systems</h2>
             <p>
               Bi-fold doors create large, open transitions between indoor and outdoor spaces. They
               are ideal for kitchens, living rooms, patios, pool areas, decks, and entertainment
