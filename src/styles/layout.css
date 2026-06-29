@@ -1386,3 +1386,47 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
+/* Thank you page */
+
+.thank-you-page {
+  min-height: calc(100vh - 82px);
+  display: grid;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(23, 23, 23, 0.76), rgba(23, 23, 23, 0.42)),
+    var(--color-charcoal);
+  color: var(--color-warm-white);
+  padding: clamp(72px, 10vw, 132px) 0;
+}
+
+.thank-you-panel {
+  max-width: 820px;
+}
+
+.thank-you-panel .lede {
+  color: rgba(247, 245, 241, 0.86);
+}
+
+.thank-you-panel .button-secondary {
+  background: var(--color-warm-white);
+  color: var(--color-charcoal);
+  border-color: var(--color-warm-white);
+}
+
+.thank-you-panel .button-secondary:hover {
+  background: var(--color-muted-bronze);
+  color: var(--color-warm-white);
+  border-color: var(--color-muted-bronze);
+}
+
+.form-error {
+  margin: 22px 0 0;
+  color: #8a1f1f;
+  font-weight: 800;
+}
+
+.contact-form .button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

@@ -1,6 +1,8 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "../components/ui/Button.jsx";
-import { siteInfo } from "../data/siteInfo.js";
 import PageMeta from "../components/ui/PageMeta.jsx";
+import { siteInfo } from "../data/siteInfo.js";
 
 const doorTypes = [
   "Bi-fold door systems",
@@ -23,6 +25,40 @@ const whatToSend = [
 ];
 
 function ContactPage() {
+
+  const navigate = useNavigate();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formError, setFormError] = useState("");
+
+  const handleSubmit = async (event) => {
+  event.preventDefault();
+
+  const form = event.currentTarget;
+  const formData = new FormData(form);
+
+  setIsSubmitting(true);
+  setFormError("");
+
+  try {
+    const response = await fetch("/", {
+      method: "POST",
+      body: formData,
+    });
+
+    if (!response.ok) {
+      throw new Error("Form submission failed.");
+    }
+
+    navigate("/thank-you");
+  } catch {
+    setFormError(
+      "Something went wrong while sending the inquiry. Please call or email Pinto Developments directly."
+    );
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
   return (
     <>
       <PageMeta
@@ -103,7 +139,7 @@ function ContactPage() {
               method="POST"
               data-netlify="true"
               encType="multipart/form-data"
-              action="/thank-you"
+              onSubmit={handleSubmit}
             >
               <input type="hidden" name="form-name" value="project-inquiry" />
               <div className="form-grid">
@@ -204,8 +240,10 @@ function ContactPage() {
                 </div>
               </div>
 
-              <button className="button button-primary" type="submit">
-                Submit Inquiry
+              {formError && <p className="form-error">{formError}</p>}
+
+              <button className="button button-primary" type="submit" disabled={isSubmitting}>
+                {isSubmitting ? "Sending..." : "Submit Inquiry"}
               </button>
             </form>
           </div>
